@@ -3,22 +3,23 @@
     transition: all 0.4s ease-in-out;
 }
 .link{
-    display: inline-block;
-    border-bottom: 2px solid transparent;
-}
-.link > a:hover{
-    border-bottom-color: tomato;
-    background-color: rgba(37, 36, 36, 0.068);
+    display: inline-flex;
+    float: right;
 }
 .link > a{
-    padding: 2em;
+    border-bottom: 2px solid transparent;
+    padding: 1em;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
-.link > img{
+.link > a:hover{
+    border-bottom-color: tomato;
+    background-color: rgba(37, 36, 36, 0.068);
+}
+header > img{
     height:72px;
     width: auto;
 }
@@ -26,7 +27,16 @@
     body {
         background-color: whitesmoke;
     }
-    .link > a{
-        font-size: 1em;
+    .link{
+        float: left;
     }
+    .link > a{
+        font-size: medium;
+        padding: 0px;
+    }
+    header > img{
+        display: block;
+        clear: both;
+    }
+    
 }
