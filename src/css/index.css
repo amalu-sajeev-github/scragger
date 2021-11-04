@@ -23,7 +23,7 @@ header > img{
     height:72px;
     width: auto;
 }
-@media screen and (max-width: 300px){
+@media only screen and (max-width: 600px){
     body {
         background-color: whitesmoke;
     }
@@ -31,8 +31,8 @@ header > img{
         float: left;
     }
     .link > a{
-        font-size: medium;
-        padding: 0px;
+        font-size: large;
+        padding: 0.4em;
     }
     header > img{
         display: block;
