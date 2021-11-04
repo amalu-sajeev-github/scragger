@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+}
+.link{
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+.link:hover{
+    border-bottom-color: tomato;
+    background-color: rgba(37, 36, 36, 0.068);
+}
+.link > a{
+    padding: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.link > img{
+    height:72px;
+    width: auto;
+}
