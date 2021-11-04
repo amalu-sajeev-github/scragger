@@ -15,7 +15,7 @@ function Linkbtn(props){
     if(props.image == true) {
         return (
             <div class='link'>
-                <img src={props.src} draggable='false'/>
+                <img src={props.src} draggable='false' class='img'/>
             </div>
         )
     } else return (

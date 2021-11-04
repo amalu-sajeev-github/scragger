@@ -6,7 +6,7 @@
     display: inline-block;
     border-bottom: 2px solid transparent;
 }
-.link:hover{
+.link > a:hover{
     border-bottom-color: tomato;
     background-color: rgba(37, 36, 36, 0.068);
 }
@@ -14,11 +14,19 @@
     padding: 2em;
     text-decoration: none;
     text-transform: uppercase;
-    color: brown;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 .link > img{
     height:72px;
     width: auto;
+}
+@media screen and (max-width: 300px){
+    body {
+        background-color: whitesmoke;
+    }
+    .link > a{
+        font-size: 1em;
+    }
 }
