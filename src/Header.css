@@ -1,8 +1,11 @@
 header{
     background-color: rgba(255, 255, 255, 0.699);
+    position: fixed;
+}
+#spacer{
+    height: 7rem;
 }
 nav{
-    display: inline-flex;
     float: right;
 }
 nav > a{
@@ -20,9 +23,7 @@ header img{
     height: 72px;
     display: inline-block;
 }
-@media only screen and (max-width: 300px) {
-    header a{
-        display: block;
-        border-bottom: 2px double black;
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    
     }
-}
