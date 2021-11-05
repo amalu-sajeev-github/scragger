@@ -1,8 +1,6 @@
 import React from "react";
 import './Banner.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
-
+import whatsapp from './images/whatsapp-w.png';
 
 class Banner extends React.Component{
     constructor(props){
@@ -30,8 +28,8 @@ class Banner extends React.Component{
             <div>
                 <h4>&nbsp;{this.state.data}</h4>
                 <a href='#' id='waBtn'>
-                <FontAwesomeIcon icon={faWhatsappSquare} size='2x' fixedWidth color='lightgreen'/>
-                connect now
+                    <img src={whatsapp} />
+                    connect now
                 </a>
             </div>
             <div className='figContain'>

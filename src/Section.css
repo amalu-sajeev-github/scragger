@@ -1,37 +1,52 @@
-
 section{
-    background: white;
-    padding: 2em;
-    margin: 1em;
-    font-family: 'cursive';
-    font-size: 1.5em;
+    background-color: white;
+    margin: 1rem;
+    padding-bottom: 2rem;
 }
-section > div{
-    padding: 1em;
-    letter-spacing: 0.1em;
+section>h3{
+
 }
-section > div::before{
+section>div{
+    padding: 1rem;
+}
+section>div::before{
     content: '“';
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: bold;
 }
-section > div::after{
+section>div::after{
     content: '„';
-    font-size: 2em;
+    font-size: 2rem;
+    font-weight: bold;
 }
-section .auther {
-    float: right
+section .auther{
+    float: right;
+    margin: 1rem;
 }
-section .auther::before {
-    content: '-- ';
+section .auther::before{
+    content: '--';
 }
 
-@media only screen and (max-width: 300px) {
-    section{
-        padding: .5em;
-        margin: .25em;
-    }
-    section div{
-        letter-spacing: 0;
-        font-size: medium;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    /* for desktop */
+    
 }
