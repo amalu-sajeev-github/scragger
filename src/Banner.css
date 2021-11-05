@@ -32,7 +32,6 @@
     flex-direction: row;
 }
 .figContain figure{
-    background-size: 50%;
     width: 50%;
     height: 700px;
 }
@@ -40,28 +39,35 @@
     background: url('./images/bg-1.jpg');
     background-size: 50%;
     background-attachment: fixed;
-    background-position: center middle;
+    background-position: center 0px;
     background-repeat: no-repeat;
 }
 #rfig{
     background: url('./images/bg-2.jpg');
     background-size: 50%;
     background-attachment: fixed;
-    background-position: center middle;
-    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 @media only screen and (max-width: 300px) {
     .figContain{
         flex-direction: column;
     }
     .figContain figure{
-        width: 100%;
-        height: 60vh;
+        border: 3px solid yellow;
+        width: 100vw;
+        height: 40vh;
     }
     #lfig{
-        background-size: 100%;
+        background-size: cover;
+        background-position: center middle;
+        background-attachment: initial;
+        height: 70vh;
     }
     #rfig{
         background-size: 100%;
+    }
+    #waBtn{
+        padding: 0.2em;
+        padding-top: 1em;
     }
 }
