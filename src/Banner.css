@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); /*Dancing Script*/
+
+.banner{
+    background-color: rgba(0, 255, 255, 0.205);
+    font-family: 'Verdana';
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.banner h4{
+    padding: 1em;
+    text-transform: capitalize;
+    font-family: 'Dancing Script';
+    font-size: 2em;
+}
+#waBtn{
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 1em;
+    background-color: white;
+    border: 2px solid lightgreen;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px grey;
+}
+.figContain{
+    border-top: 14px dashed rgba(0, 0, 0, 0.322);
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+}
+.figContain figure{
+    background-size: 50%;
+    width: 50%;
+    height: 700px;
+}
+#lfig{
+    background: url('./images/bg-1.jpg');
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position: center middle;
+    background-repeat: no-repeat;
+}
+#rfig{
+    background: url('./images/bg-2.jpg');
+    background-size: 50%;
+    background-attachment: fixed;
+    background-position: center middle;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 300px) {
+    .figContain{
+        flex-direction: column;
+    }
+    .figContain figure{
+        width: 100%;
+        height: 60vh;
+    }
+    #lfig{
+        background-size: 100%;
+    }
+    #rfig{
+        background-size: 100%;
+    }
+}

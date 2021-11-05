@@ -1,0 +1,38 @@
+
+section{
+    background: white;
+    padding: 2em;
+    margin: 1em;
+    font-family: 'cursive';
+    font-size: 1.5em;
+}
+section > div{
+    padding: 1em;
+    font-family: monospace;
+    letter-spacing: 0.1em;
+}
+section > div::before{
+    content: '“';
+    font-size: 2em;
+}
+section > div::after{
+    content: '„';
+    font-size: 2em;
+}
+section .auther {
+    float: right
+}
+section .auther::before {
+    content: '-- ';
+}
+
+@media only screen and (max-width: 300px) {
+    section{
+        padding: .5em;
+        margin: .25em;
+    }
+    section div{
+        letter-spacing: 0;
+        font-size: medium;
+    }
+}

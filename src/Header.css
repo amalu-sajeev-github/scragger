@@ -1,0 +1,28 @@
+header{
+    background-color: rgba(255, 255, 255, 0.699);
+}
+nav{
+    display: inline-flex;
+    float: right;
+}
+nav > a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 1em;
+}
+nav > a:hover{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+header img{
+    height: 72px;
+    display: inline-block;
+}
+@media only screen and (max-width: 300px) {
+    header a{
+        display: block;
+        border-bottom: 2px double black;
+    }
+}

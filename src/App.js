@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Banner from './Banner';
+import Section from './Section';
+let quote1 = `fashion is not something that exist in dress only.
+              fashion is in the sky, in the street. fashion has
+              to do with ideas, the way we live, what is hapening.`;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Header/>
+      <br/>
+      <Banner/>
+      <Section head='quotes' auther='coco chanel'>
+        {quote1}
+      </Section>
     </div>
   );
 }
